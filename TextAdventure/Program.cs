@@ -6,13 +6,13 @@ namespace TextAdventure
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            StartGame();
         }
         public static void StartGame()
         {
-            int choice = 0;
+            
             string playerName = Greeting();
-            Option(playerName);
+            int choice = Option(playerName);
             Travel(choice);
         }
 
@@ -27,13 +27,26 @@ namespace TextAdventure
 
         private static void Travel(int choice)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Option: {choice}");
         }
 
-        public static void Option(string playerName)
+        public static int Option(string playerName)
         {
+            int choice = 0;
             Console.WriteLine($"Hello {playerName}");
-            Console.WriteLine("");
+            Console.WriteLine("Where would you like to travel to? (1) Somewhere (2) Nowhere");
+            choice = int.Parse(Console.ReadLine());
+
+            while (choice != 1 || choice != 2)
+            {
+                if (choice == 1 || choice == 2)
+                {
+                    break;
+                }
+                Console.WriteLine("Where would you like to travel to? (1) Somewhere (2) Nowhere");
+                choice = int.Parse(Console.ReadLine());
+            }
+            return choice;
         }
 
     }
