@@ -4,19 +4,24 @@ namespace TextAdventure
 {
     public class Program
     {
+        
         public static void Main(string[] args)
         {
             StartGame();
         }
+
+        #region StartGame
         public static void StartGame()
         {
-            
-            string playerName = Greeting();
-            int choice = Option(playerName);
-            Travel(choice);
+            Game game = new Game();
+            game.PlayerName = Greeting();
+            int choice = Option(game.PlayerName);
+            Console.WriteLine(game.GetDestination(choice));
         }
+        #endregion
 
-        private static string Greeting()
+        #region Greeting
+        public static string Greeting()
         {
             Console.WriteLine("Hey there! Welcome to Travel Text Adventure!!");
             Console.Write("What's your name: ");
@@ -24,12 +29,9 @@ namespace TextAdventure
 
             return playerName;
         }
+        #endregion
 
-        private static void Travel(int choice)
-        {
-            Console.WriteLine($"Option: {choice}");
-        }
-
+        #region Option
         public static int Option(string playerName)
         {
             int choice = 0;
@@ -48,6 +50,6 @@ namespace TextAdventure
             }
             return choice;
         }
-
+        #endregion
     }
 }
