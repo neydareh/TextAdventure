@@ -175,6 +175,12 @@ namespace GameLibrary
                 Console.WriteLine("####################################");
                 Game.DisplayPlayerStats(Game.players);
             }
+            Console.WriteLine("Do you want to restart");
+            if (Console.ReadLine().ToLower() == "yes")
+            {
+                StartGame();
+                Console.Clear();
+            }
         }
         #endregion
 

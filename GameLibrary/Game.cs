@@ -29,7 +29,9 @@ namespace GameLibrary
                 Console.WriteLine($"Player: {player.PlayerName}");
                 Console.WriteLine($"Player Airline: {player.PreferedAirline}");
                 Console.WriteLine($"Ticket Number: {player.TicketNumber}");
+                Console.WriteLine("");
             }
+
             Console.ReadLine();
             Console.Clear();
         }
