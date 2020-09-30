@@ -11,3 +11,6 @@ F:\TrueCoders\repos\TextAdventure\TextAdventure\obj\Debug\netcoreapp3.1\TextAdve
 F:\TrueCoders\repos\TextAdventure\TextAdventure\obj\Debug\netcoreapp3.1\TextAdventure.dll
 F:\TrueCoders\repos\TextAdventure\TextAdventure\obj\Debug\netcoreapp3.1\TextAdventure.pdb
 F:\TrueCoders\repos\TextAdventure\TextAdventure\obj\Debug\netcoreapp3.1\TextAdventure.genruntimeconfig.cache
+F:\TrueCoders\repos\TextAdventure\TextAdventure\bin\Debug\netcoreapp3.1\GameLibrary.dll
+F:\TrueCoders\repos\TextAdventure\TextAdventure\bin\Debug\netcoreapp3.1\GameLibrary.pdb
+F:\TrueCoders\repos\TextAdventure\TextAdventure\obj\Debug\netcoreapp3.1\TextAdventure.csproj.CopyComplete

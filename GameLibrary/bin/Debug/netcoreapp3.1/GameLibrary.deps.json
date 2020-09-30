@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "TextAdventure/1.0.0": {
-        "dependencies": {
-          "GameLibrary": "1.0.0"
-        },
-        "runtime": {
-          "TextAdventure.dll": {}
-        }
-      },
       "GameLibrary/1.0.0": {
         "runtime": {
           "GameLibrary.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "TextAdventure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "GameLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,

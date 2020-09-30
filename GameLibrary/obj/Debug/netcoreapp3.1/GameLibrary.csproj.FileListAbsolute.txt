@@ -1,0 +1,9 @@
+F:\TrueCoders\repos\TextAdventure\GameLibrary\obj\Debug\netcoreapp3.1\GameLibrary.csprojAssemblyReference.cache
+F:\TrueCoders\repos\TextAdventure\GameLibrary\obj\Debug\netcoreapp3.1\GameLibrary.AssemblyInfoInputs.cache
+F:\TrueCoders\repos\TextAdventure\GameLibrary\obj\Debug\netcoreapp3.1\GameLibrary.AssemblyInfo.cs
+F:\TrueCoders\repos\TextAdventure\GameLibrary\obj\Debug\netcoreapp3.1\GameLibrary.csproj.CoreCompileInputs.cache
+F:\TrueCoders\repos\TextAdventure\GameLibrary\bin\Debug\netcoreapp3.1\GameLibrary.deps.json
+F:\TrueCoders\repos\TextAdventure\GameLibrary\bin\Debug\netcoreapp3.1\GameLibrary.dll
+F:\TrueCoders\repos\TextAdventure\GameLibrary\bin\Debug\netcoreapp3.1\GameLibrary.pdb
+F:\TrueCoders\repos\TextAdventure\GameLibrary\obj\Debug\netcoreapp3.1\GameLibrary.dll
+F:\TrueCoders\repos\TextAdventure\GameLibrary\obj\Debug\netcoreapp3.1\GameLibrary.pdb
