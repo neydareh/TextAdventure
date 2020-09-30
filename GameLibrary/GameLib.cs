@@ -12,7 +12,8 @@ namespace GameLibrary
             playerOne.Destination = GetDestination(Option(playerOne.PlayerName));
             playerOne.PreferedAirline = GetAirline(GenericOption());
             playerOne.TicketNumber = GenerateTicketNumber();
-            SimulateBoarding();
+            SimulateTravel();
+            SavePlayer(playerOne);
         }
         #endregion
 
@@ -136,8 +137,8 @@ namespace GameLibrary
         }
         #endregion
 
-        #region SimulateBoarding
-        private static void SimulateBoarding()
+        #region SimulateTravel
+        private static void SimulateTravel()
         {
             Console.Clear();
             Console.WriteLine("                         ##");
@@ -159,7 +160,23 @@ namespace GameLibrary
         }
         #endregion
 
-        #region SimulateTravel
+        #region SavePlayerInfo
+        private static void SavePlayer(Player player)
+        {
+            Console.WriteLine("Do you want to save the current player");
+            if (Console.ReadLine().ToLower() == "yes")
+            {
+                Console.WriteLine("Saving Player");
+                Game.SavePlayer(player);
+            }
+            Console.WriteLine("Do you want to view the saved player");
+            if (Console.ReadLine().ToLower() == "yes")
+            {
+                Console.WriteLine("####################################");
+                Game.DisplayPlayerStats(Game.players);
+            }
+        }
         #endregion
+
     }
 }
