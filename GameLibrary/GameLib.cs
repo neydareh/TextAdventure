@@ -11,6 +11,8 @@ namespace GameLibrary
             playerOne.PlayerName = Greeting();
             playerOne.Destination = GetDestination(Option(playerOne.PlayerName));
             playerOne.PreferedAirline = GetAirline(GenericOption());
+            playerOne.TicketNumber = GenerateTicketNumber();
+            SimulateBoarding();
         }
         #endregion
 
@@ -122,6 +124,42 @@ namespace GameLibrary
             string[] destinations = { "Brazil", "England", "Australia", "Belgium", "Canada", "Argentina", "Finland" };
             return $"{destinations[new Random().Next(0, 6)]}";
         }
+        #endregion
+
+        #region GenerateTicketNumber
+        private static string GenerateTicketNumber()
+        {
+            string ticketNumber = "FLIGHT-FLY-";
+            Random rand = new Random();
+            ticketNumber += $"{rand.Next(100, 200)}";
+            return ticketNumber;
+        }
+        #endregion
+
+        #region SimulateBoarding
+        private static void SimulateBoarding()
+        {
+            Console.Clear();
+            Console.WriteLine("                         ##");
+            Console.WriteLine("                          #   #");
+            Console.WriteLine("###                        #      #");
+            Console.WriteLine("##  #                       #        #");
+            Console.WriteLine("##   #                      #         # # # # # # # ");
+            Console.WriteLine("##    # # # # # # # # # # #  #                        # ");
+            Console.WriteLine("##                                                      # ");
+            Console.WriteLine("##    # # # # # # # # # # #  #                        # ");
+            Console.WriteLine("##  #                       #           # # # # # # # ");
+            Console.WriteLine("## #                        #        #");
+            Console.WriteLine("###                        #      #");
+            Console.WriteLine("                          #   #");
+            Console.WriteLine("                        ##");
+            Console.ReadLine();
+            Console.Clear();
+            
+        }
+        #endregion
+
+        #region SimulateTravel
         #endregion
     }
 }

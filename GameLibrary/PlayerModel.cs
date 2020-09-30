@@ -10,8 +10,14 @@ namespace GameLibrary
         public int Age { get; set; }
         public string Destination { get; set; }
         public string PreferedAirline { get; set; }
+        public string TicketNumber { get; set; }
         public Player()
         {
+            PlayerName = "";
+            Age = 1;
+            Destination = "";
+            PreferedAirline = "";
+            TicketNumber = "";
         }
     }
 }
